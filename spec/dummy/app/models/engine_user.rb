@@ -1,0 +1,2 @@
+class EngineUser < ApplicationRecord
+end
