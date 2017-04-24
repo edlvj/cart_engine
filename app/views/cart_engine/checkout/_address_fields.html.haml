@@ -1,0 +1,14 @@
+.form-group
+  = field.input :firstname, placeholder: t('address.firstname')
+.form-group
+  = field.input :lastname, placeholder: t('address.lastname')
+.form-group
+  = field.input :address,  placeholder: t('address.address')
+.form-groupW
+  = field.input :city,  placeholder: t('address.city')
+.form-group
+  = field.input :zipcode,  placeholder: t('address.zip')
+.form-group
+  = field.input :country_id, collection: countries, input_html: { class: "default-select"} , prompt: t('address.select_country')
+.form-group
+  = field.input :phone, placeholder: t('address.example_phone')

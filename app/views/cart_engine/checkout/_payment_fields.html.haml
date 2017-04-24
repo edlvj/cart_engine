@@ -1,0 +1,14 @@
+= f.simple_fields_for :credit_card, @credit_card do |field|
+  .form-group
+    = field.input :number, placeholder: t('payment.cart_number')
+  .row
+    .col-sm-6
+      .form-group
+        = field.input :name,  placeholder: t('payment.name_on_card')
+    .col-sm-3
+      .form-group
+        = field.input :expiration_date, placeholder: t('payment.mm_yy')
+    .col-sm-3
+      .form-group.relative
+        = field.input :cvv,  placeholder: t('payment.cvv')
+        %i.fa.fa-question-circle.general-form-help.font-18
